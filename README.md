@@ -1,53 +1,50 @@
-# Résumé
+本项目在 [resume](https://github.com/lanxx314/resume) 基础上二次修改。
 
-Hit branch [zh_CN](https://github.com/billryan/resume/tree/zh_CN) if you want a Simplified Chinese résumé.
+## 1. 项目说明
 
-中文用户请前往 [zh_CN](https://github.com/billryan/resume/tree/zh_CN) 分支。
+一个十分简洁优雅的 **LaTeX** 简历模板, 使用 **XeLaTeX** 或 **PdfLaTex** (只本地支持，如 TeXstudio) 均可编译。
 
-An elegant \LaTeX\ résumé template, compiled with \XeLaTeX. Inspired by 
+项目修改自 [resume](https://github.com/billryan/resume/)，并进行了优化，若不想本地手动编译可以将该源码打包至 zip 直接上传至 **[OverLeaf](https://www.overleaf.com/)** 等在线平台进行在线编译与预览。
 
-- [zachscrivena/simple-resume-cv](https://github.com/zachscrivena/simple-resume-cv)
-- [res](https://www.ctan.org/pkg/res)
-- [JianXu's CV](http://www.jianxu.net/en/files/JianXu_CV.pdf)
-- [paciorek's CV/Resume template](http://www.stat.berkeley.edu/~paciorek/computingTips/Latex_template_creating_CV_.html)
-- [How to write a LaTeX class file and design your own CV (Part 1) - ShareLaTeX](https://www.sharelatex.com/blog/2011/03/27/how-to-write-a-latex-class-file-and-design-your-own-cv.html)
+## 2. 模版特性
 
-## Features
+- 格式布局优雅
+- 支持本地编译在线编译
+- 容易上手，不会 LaTeX 也能使用
+- 可根据需求修改定制和扩展
+- 完美的中文支持，包含中文包
 
-- Easy to further customize or extend
-- Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-- Perfect Simplified Chinese fonts supported with Adobefonts
-- FontAwesome 4.6.3 support
+## 3. 使用方法
+1. 下载项目 zip 包解压缩，或者 git 到本地
+2. 配置本地编辑器（TeXstudio）或使用 OverLeaf 等在线平台
+3. 打开 resume-template-zh_CN.tex，填充自己的简历内容
+4. 编译构建pdf
+5. 查看生成的简历文件 resume-template-zh_CN.pdf
 
-## Quick Start
-- Fork this repository
-- Add information about you directly in GitHub
-- Compile TeX file to PDF with [LaTeX.Online](https://latexonline.cc/)
-- Can also use Overleaf for online compilation with [template](https://www.overleaf.com/latex/templates/bill-ryans-elegant-latex-resume/xcqmhktmzmsw)
+注：
+[TeXstudio安装与配置指南](https://zhuanlan.zhihu.com/p/675803354)
+[OverLeaf注册在线使用指南](https://blog.csdn.net/qq_66536007/article/details/140515188)
 
-### Sample Output
+## 4. 配置流程（已优化）
+目前通用能力已封装到 `resume.cls`，模板文件只保留内容与少量配置。
 
-![English](https://user-images.githubusercontent.com/25968335/131621921-65ab1862-1f56-47ef-9d58-8d5149bec841.png)
-![English with photo](https://user-images.githubusercontent.com/25968335/131621960-1cafb3c2-114b-4e90-8b04-bd9b949a6e9d.png)
-![简体中文](https://user-images.githubusercontent.com/25968335/131621980-c004f2a6-4199-4676-8a97-5d2cb165402f.png)
+在 `resume-template-zh_CN.tex` / `resume-template-en_US.tex` 顶部可直接调整：
 
-- [English PDF](https://github.com/billryan/resume/files/3463503/resume.pdf)
-- [English with photo PDF](https://github.com/billryan/resume/files/3463501/resume_photo.pdf)
-- [简体中文 PDF](https://github.com/billryan/resume/files/3463502/resume-zh_CN.pdf)
+- `\setstretch{0.93}`：全局行距
+- `\renewcommand{\ResumeWatermarkText}{...}`：水印文字
+- `\renewcommand{\CompanyIconHeight}{...}`：学校/公司图标尺寸
+- `\renewcommand{\OrgTitleWidth}{...}`：公司标题字段宽度
+- `\renewcommand{\ContactLabelSep}{...}`：联系方式标签分隔符（中英文可不同）
 
-## Usage
+常用通用宏（均在 `resume.cls` 中）：
 
-1. Edit in Overleaf online Web [template](https://www.overleaf.com/latex/templates/bill-ryans-elegant-latex-resume/xcqmhktmzmsw)
-2. Compile tex on your Computer
+- `\edusubsectionwithicon`
+- `\orgsubsection`
+- `\contactline`
+- `\inlineicon`
+- `\EnableResumeWatermark`
 
-If you only need a résumé in English or have installed Adobe Simplified Chinese on your OS, **It would be better to clone only the master branch,** since the Simplified Chinese fonts files are too large.
-
-```
-git clone https://github.com/billryan/resume.git --branch master --depth 1 --single-branch <folder>
-```
-
-## License
-
-[The MIT License (MIT)](http://opensource.org/licenses/MIT)
-
-Copyrighted fonts are not subjected to this License.
+## 5. 效果输出
+简历编译后生成的 PDF 效果如下：
+![resume-zh_CN.png](./resume-template-zh_CN.png)
+![resume-en_CN.png](./resume-template-en_CN.png)

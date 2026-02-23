@@ -1,0 +1,87 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Keep CJK support for Chinese watermark text.
+%\usepackage{zh_CN-Adobefonts_internal}
+\usepackage{linespacing_fix}
+\usepackage{cite}
+
+% ---------------- Template Config ----------------
+\setstretch{0.93}
+\renewcommand{\ResumeWatermarkText}{Resume Template}
+\renewcommand{\CompanyIconHeight}{1.725em}
+\renewcommand{\OrgTitleWidth}{5.4cm}
+\renewcommand{\ContactLabelWidth}{3.5em}
+\renewcommand{\ContactLabelSep}{:}
+
+\begin{document}
+\pagenumbering{gobble}
+\EnableResumeWatermark
+
+{
+    \noindent
+    \begin{minipage}[b]{0.75\textwidth}
+        {\LARGE \textbf{Resume Template (EN)}} \\[5pt]
+        \contactline{\faPhone}{Phone}{(+1) 617-555-0142} \\
+        \contactline{\faEnvelope}{Email}{resume.template@example.com} \\
+        \contactline{\faGithub}{Website}{\href{https://github.com/resume-template}{\underline{github.com/resume-template}}}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[b]{0.2\textwidth}
+        \raggedleft
+        \includegraphics[height=2.8cm, keepaspectratio]{IDphoto.png}
+    \end{minipage}
+    \vspace{0.2em}
+}
+
+\section{\faGraduationCap\ Education}
+\edusubsectionwithicon[pku.png]{\textbf{\makebox[5cm][l]{Peking University}} \textit{Computer Science and Technology}}{\textit{B.S.} \hfill Sep 2017 - Jun 2021}
+\edusubsectionwithicon[mit.svg]{\textbf{\makebox[6.8cm][l]{Massachusetts Institute of Technology (MIT)}}}{\textit{Ph.D. in Computer Science} \hfill Sep 2021 - Jun 2026}
+\begin{itemize}
+    \item \textbf{Research Interests}: large language models, reasoning enhancement, agent systems, and multimodal learning.
+    \item \textbf{Representative Courses}: machine learning, probabilistic graphical models, distributed systems, advanced algorithms, statistical inference, and optimization.
+    \item \textbf{Academic Service}: reviewer for multiple top-tier conferences and contributor to cross-institution research collaborations.
+\end{itemize}
+
+\section{\faBook\ Publications}
+\begin{itemize}
+    \item \textbf{Attention Is All You Need} (arXiv:1706.03762, 2017)
+    \item \textbf{Authors}: Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
+    \item \textbf{Core Contribution}: proposes the Transformer architecture based solely on attention mechanisms, fully removing recurrence and convolutions while improving parallel training efficiency.
+    \item \textbf{Key Results}: BLEU 28.4 on WMT14 En-De (+2+ over previous best) and BLEU 41.8 on WMT14 En-Fr (single-model SOTA).
+\end{itemize}
+
+\section{\faTrophy\ Honors \& Awards}
+\begin{itemize}
+    \item Nobel Prize in Physics \hfill \textbf{2024}
+    \item Nobel Prize in Chemistry \hfill \textbf{2023}
+    \item Nobel Memorial Prize in Economic Sciences \hfill \textbf{2022}
+\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.2ex]
+    \item \textbf{Programming Languages}: Python, C++, Rust, SQL.
+    \item \textbf{Models \& Systems}: PyTorch, JAX, distributed training, RAG, agent workflows, and online inference optimization.
+    \item \textbf{Engineering}: able to turn research prototypes into production-ready systems with observability, evaluation, and staged rollout support.
+\end{itemize}
+
+\section{\faBriefcase\ Internship Experience}
+\orgsubsection{Openai.ico}{https://openai.com/}{OpenAI}{Research Engineering Intern}{Jun 2025 - Sep 2025}
+\begin{itemize}
+    \item \textbf{STAR framework}: STAR is a structured way to present experience. \textbf{S (Situation)} describes the context, \textbf{T (Task)} defines the goal, \textbf{A (Action)} explains what you did, and \textbf{R (Result)} presents measurable outcomes.
+    \item \textbf{Writing guideline}: describe context and objective first, then explain your key actions, and end with quantifiable impact (for example, quality, latency, cost, or efficiency improvements).
+\end{itemize}
+
+\orgsubsection{gemini}{https://deepmind.google/technologies/gemini/}{Google DeepMind (Gemini)}{Core Research Intern (Gemini 3.1 Pro)}{Oct 2025 - Feb 2026}
+\begin{itemize}
+    \item \textbf{S (Situation)}: the team needed to improve Gemini 3.1 Pro under a fixed compute budget while keeping training stable. \textbf{T (Task)}: own the design, execution, and iteration of the Gemini 3.1 Pro training pipeline. \textbf{A (Action)}: optimized data mixture, scheduling, and hyperparameters; tracked convergence and key benchmarks by phase; and quickly rolled back and retrained unstable runs. \textbf{R (Result)}: improved convergence stability and training efficiency, with SOTA-level performance on math reasoning, coding, and long-context tasks.
+\end{itemize}
+
+\hrule
+\begin{itemize}[itemindent=-0.50cm]
+  \item[] \inlineicon{github.svg}\textbf{Github}: \href{https://github.com/resume-template}{\underline{resume-template}},
+          \inlineicon{wechat}\textbf{WeChat}: ResumeTemplate
+\end{itemize}
+\end{document}
