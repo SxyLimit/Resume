@@ -1,45 +1,38 @@
-# Copy this file to the Git repository and rename it ".gitignore".
-# Lines starting with '#' are treated as comments.
-
-############################################
-## USER SCRIPTS AND NOTES
-############################################
-
-/*.bat
-/\!*
+# macOS / editor
 .DS_Store
-*.pdf
+.vscode/
+.idea/
 
-############################################
-## LATEX TEMPORARY FILES
-############################################
-
-*.log
+# LaTeX temporary files
 *.aux
-*.bbl
-*.blg
-*.tex.undo
-*.tex.bak
-*.~te
-*.$te
-*.DVX
-*.DDF
-*.synctex.gz
-*.synctex.gz(busy)
-*.fdb_latexmk
-*.fls
+*.log
 *.out
 *.toc
 *.lof
 *.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
 *.idx
 *.ilg
 *.ind
 
-*.dvi
-*.ps
+# Compiled artifacts (can be regenerated)
+*.pdf
 
-############################################
-# do not upload secret infomation
+# Temporary files
+*.tmp
+*~
+
+# Local personal resume content (do not upload)
 myresume.tex
 myresume.pdf
+myresume.png
+myresume.aux
+myresume.log
+myresume.out
+myresume.synctex.gz
+icon/myresume/
+/myresume/

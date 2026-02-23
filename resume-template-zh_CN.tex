@@ -1,0 +1,85 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+% ---------------- Template Config ----------------
+\setstretch{0.93}
+\renewcommand{\ResumeWatermarkText}{简历模板}
+\renewcommand{\CompanyIconHeight}{1.725em}
+\renewcommand{\OrgTitleWidth}{5.4cm}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+\EnableResumeWatermark
+
+{
+    \noindent
+    \begin{minipage}[b]{0.75\textwidth}
+        {\LARGE \textbf{简历模板展示（中文）}} \\[5pt]
+        \contactline{\faPhone}{电话}{(+1) 617-555-0142} \\
+        \contactline{\faEnvelope}{邮箱}{resume.template@example.com} \\
+        \contactline{\faGithub}{主页}{\href{https://github.com/resume-template}{\underline{github.com/resume-template}}}
+    \end{minipage}%
+    \hfill
+    \begin{minipage}[b]{0.2\textwidth}
+        \raggedleft
+        \includegraphics[height=2.8cm, keepaspectratio]{IDphoto.png}
+    \end{minipage}
+    \vspace{0.2em}
+}
+
+\section{\faGraduationCap\ 教育经历}
+\edusubsectionwithicon[pku.png]{\textbf{\makebox[5cm][l]{北京大学}} \textit{计算机科学与技术}}{\textit{本科} \hfill 2017.9 - 2021.6}
+\edusubsectionwithicon[mit.svg]{\textbf{\makebox[7.2cm][l]{麻省理工学院（MIT）}} \textit{计算机科学}}{\textit{博士} \hfill 2021.9 - 2026.6}
+\begin{itemize}
+    \item \textbf{研究方向}：大语言模型、推理增强、智能体系统与多模态学习。
+    \item \textbf{代表课程}：机器学习、概率图模型、分布式系统、高级算法、统计推断与优化方法。
+    \item \textbf{学术活动}：担任多个国际顶会审稿人并参与跨校联合研究项目。
+\end{itemize}
+
+\section{\faBook\ 论文发表}
+\begin{itemize}
+    \item \textbf{Attention Is All You Need}（arXiv:1706.03762，2017）
+    \item \textbf{作者}：Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, Illia Polosukhin
+    \item \textbf{核心贡献}：提出仅依赖注意力机制的 Transformer 架构，完全去除 RNN/CNN，显著提升并行训练效率与建模能力。
+    \item \textbf{关键结果}：WMT14 英德翻译 BLEU 28.4（较当时最优提升 2+）；英法翻译 BLEU 41.8，达到单模型 SOTA。
+\end{itemize}
+
+\section{\faTrophy\ 荣誉奖项}
+\begin{itemize}
+    \item 诺贝尔物理学奖（Nobel Prize in Physics） \hfill \textbf{2024}
+    \item 诺贝尔化学奖（Nobel Prize in Chemistry） \hfill \textbf{2023}
+    \item 诺贝尔经济学奖（Nobel Memorial Prize in Economic Sciences） \hfill \textbf{2022}
+\end{itemize}
+
+\section{\faCogs\ 专业技能}
+\begin{itemize}[parsep=0.2ex]
+    \item \textbf{编程语言}：Python、C++、Rust、SQL。
+    \item \textbf{模型与系统}：熟悉 PyTorch、JAX、分布式训练、RAG、Agent 工作流与在线推理优化。
+    \item \textbf{工程能力}：能够从研究原型快速落地到可观测、可评测、可灰度发布的生产系统。
+\end{itemize}
+
+\section{\faBriefcase\ 实习经历}
+\orgsubsection{Openai.ico}{https://openai.com/}{OpenAI}{研究工程实习生}{2025.6 - 2025.9}
+\begin{itemize}
+    \item \textbf{STAR 法则定义}：STAR 是结构化表达经历的方法，\textbf{S（Situation）} 指背景场景，\textbf{T（Task）} 指目标任务，\textbf{A（Action）} 指关键行动，\textbf{R（Result）} 指最终结果。
+    \item \textbf{写作原则}：先交代背景与目标，再描述本人采取的核心动作，最后给出量化结果（如准确率、时延、成本、效率提升），避免只罗列“做了什么”。
+\end{itemize}
+
+\orgsubsection{gemini}{https://deepmind.google/technologies/gemini/}{Google DeepMind (Gemini)}{核心研究实习生（Gemini 3.1 Pro）}{2025.10 - 2026.2}
+\begin{itemize}
+    \item \textbf{S（Situation）}：团队需要在固定算力预算内提升 Gemini 3.1 Pro 的综合能力并保证训练稳定性。 \textbf{T（Task）}：负责 Gemini 3.1 Pro 模型训练方案的设计、执行与迭代。 \textbf{A（Action）}：持续优化数据配比、训练调度与超参数设置，按阶段跟踪收敛曲线和核心评测表现，针对异常批次快速回滚并重训。 \textbf{R（Result）}：模型收敛更稳定、训练效率显著提升，在数学推理、代码与长上下文等多项指标达到当期 SOTA。
+\end{itemize}
+
+\hrule
+\begin{itemize}[itemindent=-0.50cm]
+  \item[] \inlineicon{github.svg}\textbf{Github}：\href{https://github.com/resume-template}{\underline{resume-template}}，
+          \inlineicon{wechat}\textbf{Wechat}：ResumeTemplate
+\end{itemize}
+\end{document}
