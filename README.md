@@ -1,4 +1,4 @@
-本项目在 [resume](https://github.com/lanxx314/resume) 基础上二次修改。
+本项目在 [resume](https://github.com/lanxx314/resume) 基础上二次修改，同时增加了 Typst 版本的简历模板（目前 Typst 模板还没有完全复刻 LaTex 的格式，还在调整中）。
 
 ## 1. 项目说明
 
@@ -25,7 +25,8 @@
 [TeXstudio安装与配置指南](https://zhuanlan.zhihu.com/p/675803354)
 [OverLeaf注册在线使用指南](https://blog.csdn.net/qq_66536007/article/details/140515188)
 
-## 4. 配置流程（已优化）
+## 4. 配置流程
+
 目前通用能力已封装到 `resume.cls`，模板文件只保留内容与少量配置。
 
 在 `resume-template-zh_CN.tex` / `resume-template-en_US.tex` 顶部可直接调整：
@@ -61,12 +62,6 @@
 
 ```bash
 typst compile resume-template-zh_CN.typ resume-template-zh_CN-typst.pdf
-```
-
-生成 PNG 展示图：
-
-```bash
-typst compile resume-template-zh_CN.typ resume-template-zh_CN-typst.png
 ```
 
 Typst 展示效果：
