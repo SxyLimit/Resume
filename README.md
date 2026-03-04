@@ -48,3 +48,26 @@
 简历编译后生成的 PDF 效果如下：
 ![resume-zh_CN.png](./resume-template-zh_CN.png)
 ![resume-en_CN.png](./resume-template-en_CN.png)
+
+## 6. Typst 版本
+
+仓库已提供与中文模板对应的 Typst 版本：
+
+- 模板文件：`resume-template-zh_CN.typ`
+- 通用样式：`template.typ`
+- 图标资源：`icons/*.svg`
+
+使用 Typst 编译：
+
+```bash
+typst compile resume-template-zh_CN.typ resume-template-zh_CN-typst.pdf
+```
+
+生成 PNG 展示图：
+
+```bash
+typst compile resume-template-zh_CN.typ resume-template-zh_CN-typst.png
+```
+
+Typst 展示效果：
+![resume-zh_CN-typst.png](./resume-template-zh_CN-typst.png)
