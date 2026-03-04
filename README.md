@@ -47,7 +47,7 @@
 ## 5. 效果输出
 简历编译后生成的 PDF 效果如下：
 ![resume-zh_CN.png](./resume-template-zh_CN.png)
-![resume-en_CN.png](./resume-template-en_CN.png)
+![resume-en_US.png](./resume-template-en_US.png)
 
 ## 6. Typst 版本
 
