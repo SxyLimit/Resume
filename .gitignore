@@ -21,18 +21,26 @@
 
 # Compiled artifacts (can be regenerated)
 *.pdf
+/pdf/
 
 # Temporary files
 *.tmp
 *~
 
+# Local agent notes (do not upload)
+/AGENTS.md
+
 # Local personal resume content (do not upload)
 myresume.tex
+myresume.typ
 myresume.pdf
 myresume.png
 myresume.aux
 myresume.log
 myresume.out
+myresume-typst.pdf
 myresume.synctex.gz
+pdf/myresume-typst.pdf
+images/myresume-typst.png
 icon/myresume/
 /myresume/
