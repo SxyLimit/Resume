@@ -47,14 +47,14 @@
 
 ## 5. 效果输出
 简历编译后生成的 PDF 效果如下：
-![resume-zh_CN.png](./resume-template-zh_CN.png)
-![resume-en_US.png](./resume-template-en_US.png)
+![resume-zh_CN.png](./images/resume-template-zh_CN.png)
+![resume-en_US.png](./images/resume-template-en_US.png)
 
 ## 6. Typst 版本
 
-仓库已提供与中文模板对应的 Typst 版本：
+仓库已提供与中英文模板对应的 Typst 版本：
 
-- 模板文件：`resume-template-zh_CN.typ`
+- 模板文件：`resume-template-zh_CN.typ`、`resume-template-en_US.typ`
 - 通用样式：`template.typ`
 - 图标资源：`icons/*.svg`（可以在 [fontawesome](https://fontawesome.com/) 寻找替换需要的 Icon，也可以在 [heroicons](https://heroicons.com/)、[lucide](https://lucide.dev/icons) 寻找，不过在其他网站寻找建议替换简历中所有的 Icon，保持统一性）
 
@@ -62,7 +62,9 @@
 
 ```bash
 typst compile resume-template-zh_CN.typ resume-template-zh_CN-typst.pdf
+typst compile resume-template-en_US.typ resume-template-en_US-typst.pdf
 ```
 
 Typst 展示效果：
-![resume-zh_CN-typst.png](./resume-template-zh_CN-typst.png)
+![resume-zh_CN-typst.png](./images/resume-template-zh_CN-typst.png)
+![resume-en_US-typst.png](./images/resume-template-en_US-typst.png)
