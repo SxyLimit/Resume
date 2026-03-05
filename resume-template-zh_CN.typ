@@ -18,11 +18,11 @@
 #let fa-work = icon("icons/fa-work.svg")
 #let fa-trophy = icon("icons/fa-trophy.svg")
 #let fa-weixin = icon("icons/fa-weixin.svg")
+#let fa-book = icon("icons/fa-book.svg")
+#let fa-cogs = icon("icons/fa-gear.svg")
+#let fa-briefcase = icon("icons/fa-briefcase.svg")
 
-// 缺少原始 SVG 时，使用现有图标替代
-#let fa-book = icon("icons/fa-code.svg")
-#let fa-cogs = icon("icons/fa-wrench.svg")
-#let section_heading(icon, title) = box(inset: 0pt)[#icon #h(0.2em)#title]
+#let section_heading(icon, title) = box(inset: 0.5pt)[#icon #h(0.1em)#title]
 #let inline_logo(path, h: 1.55em) = box(
   baseline: 100%,
   inset: 0pt,
@@ -160,7 +160,7 @@
     bullet_line[*工程能力*：能够从研究原型快速落地到可观测、可评测、可灰度发布的生产系统。],
   )
 
-  == #section_heading(fa-work, "实习经历")
+  == #section_heading(fa-briefcase, "实习经历")
 
   #grid(
     columns: (auto, 5.4cm, 1fr, auto),

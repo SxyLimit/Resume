@@ -56,7 +56,7 @@
 
 - 模板文件：`resume-template-zh_CN.typ`
 - 通用样式：`template.typ`
-- 图标资源：`icons/*.svg`
+- 图标资源：`icons/*.svg`（可以在 [fontawesome](https://fontawesome.com/) 寻找替换需要的 Icon，也可以在 [heroicons](https://heroicons.com/)、[lucide](https://lucide.dev/icons) 寻找，不过在其他网站寻找建议替换简历中所有的 Icon，保持统一性）
 
 使用 Typst 编译：
 
